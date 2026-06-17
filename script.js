@@ -16,8 +16,8 @@
     if (saved === "zh" || saved === "en") return saved;
 
     var browser = (navigator.language || "").toLowerCase();
-    if (browser.startsWith("en")) return "en";
-    return "zh";
+    if (browser.startsWith("zh")) return "zh";
+    return "en";
   }
 
   function setLanguage(lang) {
